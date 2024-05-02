@@ -55,7 +55,7 @@ function NavigationBar() {
                     </NavLink>
 
                     <NavLink
-                    title="please also provide userid in path, ex : user/basit"
+                        title="please also provide userid in path, ex : user/basit"
                         to="user"
                         className={({ isActive }) =>
                             `px-4
@@ -64,6 +64,17 @@ function NavigationBar() {
                         }
                     >
                         User
+                    </NavLink>
+
+                    <NavLink
+                        to="github"
+                        className={({ isActive }) =>
+                            `px-4 
+                            ${isActive ? "text-green-700" : "text-gray-400"} 
+                            font-semibold`
+                        }
+                    >
+                        Github
                     </NavLink>
 
                 </div>
